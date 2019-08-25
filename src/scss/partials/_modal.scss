@@ -1,0 +1,39 @@
+@import "./_mixins.scss";
+
+.custom-modal{
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color: rgba(0,0,0,0.8);
+  transition: opacity 300ms ease, visibility 300ms ease;
+  opacity: 0;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.custom-modal-container{
+  @include min-query($sm){
+    width: 500px;
+    border-radius: 10px;
+  }
+
+  @include min-query(430px){
+    font-size: 16px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  font-size: 12px;
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 100px;
+  height: 300px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.9);
+}

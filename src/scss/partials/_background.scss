@@ -1,0 +1,34 @@
+%stripes{
+  height: 100%;
+  position: fixed;
+  width: 15px;
+  background-color: white;
+}
+
+.right-stripe{
+  @extend %stripes;
+  right: 50px;
+}
+
+.left-stripe{
+  @extend %stripes;
+  left: 50px;
+}
+
+// React-Transition-Group classes
+.ls-appear, .rs-appear{
+  position: absolute;
+  top: -1000px;
+}
+
+.ls-appear-active{
+  position: absolute;
+  top: 0;
+  transition: top 500ms ease-out 300ms;
+}
+
+.rs-appear-active{
+  position: absolute;
+  top: 0;
+  transition: top 500ms ease-out 600ms;
+}

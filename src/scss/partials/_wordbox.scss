@@ -1,0 +1,49 @@
+@import "./_mixins.scss";
+
+.wordbox{
+  @include min-query($sm){
+    width: 400px;
+  }
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 15px;
+  opacity: 0.95;
+
+  & h1{
+    line-height: 200px;
+  }
+
+}
+
+.wt-appear{
+  opacity: 0.01;
+  left: -65px;
+  position: relative;
+}
+
+.wt-appear-active{
+  opacity: 1;
+  left: 0px;
+  transition: opacity 500ms linear 500ms, left 500ms ease-out 500ms;
+}
+
+.wdt-enter{
+  opacity: 0.01;
+}
+
+.wdt-enter.wdt-enter-active{
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+
+.wdt-enter-done{
+  opacity: 1;
+}
+
+.wdt-exit-active{
+  opacity: 0;
+}

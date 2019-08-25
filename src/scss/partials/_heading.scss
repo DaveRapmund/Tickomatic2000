@@ -1,0 +1,25 @@
+.heading-col{
+  margin-top: 100px;
+
+  & h2{
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  }
+
+  & p{
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  }
+}
+
+.ht-appear{
+  position: relative;
+  top: -30px;
+  opacity: 0.01;
+}
+
+.ht-appear-active{
+  top: 0px;
+  opacity: 1;
+  transition: top 700ms ease-out, opacity 400ms linear;
+}

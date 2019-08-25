@@ -1,0 +1,7 @@
+@import "./_variables.scss";
+
+@mixin min-query($min-width){
+  @media screen and (min-width: $min-width){
+    @content;
+  }
+}
